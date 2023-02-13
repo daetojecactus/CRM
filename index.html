@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/choices.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="##" class="header__logo">
+                <img src="img/header-logo.svg" alt="Логотип">
+            </a>
+            <input type="text" class="header__input" placeholder="Введите запрос">
+        </div>
+    </header>
+    <section class="clients">
+        <div class="container clients__container">
+            <h1 class="clients__title">
+                Клиенты
+            </h1>
+            <table class="clients__table">
+                <thead class="clients__thead">
+                    <th class="clients__th clients__th--id" data-column="id">
+                        ID
+                        <svg class="id-arrow-down" width="8" height="8" viewBox="0 0 8 8" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 4L7.295 3.295L4.5 6.085L4.5 0L3.5 0L3.5 6.085L0.71 3.29L0 4L4 8L8 4Z"
+                                fill="#9873FF" />
+                        </svg>
+                        <svg class="id-arrow-up" width="8" height="8" viewBox="0 0 8 8" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M3.49691e-07 4L0.705 4.705L3.5 1.915L3.5 8L4.5 8L4.5 1.915L7.29 4.71L8 4L4 -3.49691e-07L3.49691e-07 4Z"
+                                fill="#9873FF" />
+                        </svg>
+                    </th>
+                    <th class="clients__th clients__th--fio" data-column="fullName">
+                        Фамилия Имя Отчество
+                        <svg class="fio-arrow-down" width="34" height="15" viewBox="0 0 34 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2_29)">
+                                <path
+                                    d="M8 7.13637L7.295 6.43137L4.5 9.22137V3.13637H3.5V9.22137L0.71 6.42637L0 7.13637L4 11.1364L8 7.13637Z"
+                                    fill="#9873FF" />
+                            </g>
+                            <path
+                                d="M13.329 11H12.1642L14.7814 3.72727H16.0492L18.6664 11H17.5016L15.4455 5.0483H15.3887L13.329 11ZM13.5243 8.15199H17.3027V9.07528H13.5243V8.15199ZM22.7352 6.90199V7.82528H19.5107V6.90199H22.7352ZM29.2818 11H28.1809V4.66832H26.8031C26.4432 4.66832 26.1509 4.72277 25.926 4.83168C25.701 4.93821 25.5365 5.09209 25.4323 5.29332C25.3282 5.49455 25.2761 5.73248 25.2761 6.0071C25.2761 6.27936 25.3282 6.51255 25.4323 6.70668C25.5365 6.9008 25.6999 7.04877 25.9224 7.15057C26.1449 7.25237 26.4349 7.30327 26.7924 7.30327H28.6568V8.24787H26.6894C26.1284 8.24787 25.6608 8.15436 25.2867 7.96733C24.9151 7.7803 24.6357 7.5187 24.4487 7.18253C24.264 6.84399 24.1717 6.45218 24.1717 6.0071C24.1717 5.55966 24.264 5.16548 24.4487 4.82457C24.6333 4.4813 24.9115 4.21259 25.2832 4.01847C25.6572 3.82434 26.1248 3.72727 26.6859 3.72727H29.2818V11ZM25.6916 7.71875H26.9061L25.1412 11H23.8947L25.6916 7.71875Z"
+                                fill="#9873FF" />
+                            <defs>
+                                <clipPath>
+                                    <rect width="8" height="8" fill="white" transform="translate(0 3.13637)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <svg class="fio-arrow-up" width="34" height="16" viewBox="0 0 34 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <mask id="mask0_1_6" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="4"
+                                width="8" height="8">
+                                <path d="M8 4H0V12H8V4Z" fill="white" />
+                            </mask>
+                            <g mask="url(#mask0_1_6)">
+                                <path d="M8 8L7.295 7.295L4.5 10.085V4H3.5V10.085L0.71 7.29L0 8L4 12L8 8Z"
+                                    fill="#9873FF" />
+                            </g>
+                            <path
+                                d="M17.6709 11.8636H16.5701V5.53196H15.1922C14.8324 5.53196 14.54 5.58641 14.3151 5.69531C14.0902 5.80184 13.9257 5.95572 13.8215 6.15696C13.7173 6.35819 13.6652 6.59611 13.6652 6.87073C13.6652 7.14299 13.7173 7.37618 13.8215 7.57031C13.9257 7.76444 14.089 7.9124 14.3115 8.0142C14.5341 8.116 14.8241 8.1669 15.1816 8.1669H17.0459V9.1115H15.0786C14.5175 9.1115 14.0499 9.01799 13.6759 8.83096C13.3042 8.64394 13.0248 8.38233 12.8378 8.04616C12.6532 7.70762 12.5608 7.31581 12.5608 6.87073C12.5608 6.42329 12.6532 6.02912 12.8378 5.68821C13.0225 5.34493 13.3007 5.07623 13.6723 4.8821C14.0464 4.68797 14.514 4.5909 15.075 4.5909H17.6709V11.8636ZM14.0807 8.58238H15.2952L13.5303 11.8636H12.2838L14.0807 8.58238ZM22.291 7.76562V8.68892H19.0666V7.76562H22.291ZM24.2957 11.8636H23.131L25.7481 4.5909H27.0159L29.6331 11.8636H28.4683L26.4122 5.91193H26.3554L24.2957 11.8636ZM24.491 9.01562H28.2695V9.93892H24.491V9.01562Z"
+                                fill="#9873FF" />
+                        </svg>
+                    </th>
+                    <th class="clients__th clients__th--create" data-column="createDate">
+                        Дата и время создания
+                        <svg class="create-arrow-down" width="8" height="8" viewBox="0 0 8 8" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 4L7.295 3.295L4.5 6.085L4.5 0L3.5 0L3.5 6.085L0.71 3.29L0 4L4 8L8 4Z"
+                                fill="#9873FF" />
+                        </svg>
+                        <svg class="create-arrow-up" width="8" height="8" viewBox="0 0 8 8" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M3.49691e-07 4L0.705 4.705L3.5 1.915L3.5 8L4.5 8L4.5 1.915L7.29 4.71L8 4L4 -3.49691e-07L3.49691e-07 4Z"
+                                fill="#9873FF" />
+                        </svg>
+                    </th>
+                    <th class="clients__th clients__th--last" data-column="changeDate">
+                        Последние изменения
+                        <svg class="change-arrow-down" width="8" height="8" viewBox="0 0 8 8" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 4L7.295 3.295L4.5 6.085L4.5 0L3.5 0L3.5 6.085L0.71 3.29L0 4L4 8L8 4Z"
+                                fill="#9873FF" />
+                        </svg>
+                        <svg class="change-arrow-up" width="8" height="8" viewBox="0 0 8 8" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M3.49691e-07 4L0.705 4.705L3.5 1.915L3.5 8L4.5 8L4.5 1.915L7.29 4.71L8 4L4 -3.49691e-07L3.49691e-07 4Z"
+                                fill="#9873FF" />
+                        </svg>
+                    </th>
+                    <th class="clients__th clients__th--contacts">
+                        Контакты
+                    </th>
+                    <th class="clients__th clients__th--delete">
+                        Действия
+                    </th>
+                </thead>
+                <tbody class="clients__tbody">
+
+                </tbody>
+            </table>
+            <div class="clients__add">
+                <button class="clients__btn btn-reset">
+                    <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.5 8C16.71 8 18.5 6.21 18.5 4C18.5 1.79 16.71 0 14.5 0C12.29 0 10.5 1.79 10.5 4C10.5 6.21 12.29 8 14.5 8ZM5.5 6V3H3.5V6H0.5V8H3.5V11H5.5V8H8.5V6H5.5ZM14.5 10C11.83 10 6.5 11.34 6.5 14V16H22.5V14C22.5 11.34 17.17 10 14.5 10Z" />
+                    </svg>
+                    Добавить клиента
+                </button>
+            </div>
+        </div>
+    </section>
+    <div class="new-client">
+        <div class="new-client__content">
+            <h3 class="new-client__title">
+                Новый клиент
+            </h3>
+            <form class="new-client__form" id="new-client__form">
+                <div class="text-field">
+                    <input class="new-client__input" id="input-surname" type="text" data-required="true"
+                        data-min-length="2" data-max-length="25" required>
+                    <label class="text-field__placeholder">Фамилия<span class="custom-star">*</span></label>
+                </div>
+                <div class="text-field">
+                    <input class="new-client__input" id="input-name" type="text" data-required="true"
+                        data-min-length="2" data-max-length="25" required>
+                    <label class="text-field__placeholder">Имя<span class="custom-star">*</span></label>
+                </div>
+                <div class="text-field">
+                    <input class="new-client__input" id="input-lastname" type="text" data-required="true"
+                        data-min-length="2" data-max-length="25" required>
+                    <label class="text-field__placeholder">Отчество<span class="custom-star">*</span></label>
+                </div>
+                <div class="new-client__contacts-container"></div>
+                <div class="new-client__contacts">
+                    <button class="new-client__AddBtn btn-reset">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.99998 3.66665C6.63331 3.66665 6.33331 3.96665 6.33331 4.33331V6.33331H4.33331C3.96665 6.33331 3.66665 6.63331 3.66665 6.99998C3.66665 7.36665 3.96665 7.66665 4.33331 7.66665H6.33331V9.66665C6.33331 10.0333 6.63331 10.3333 6.99998 10.3333C7.36665 10.3333 7.66665 10.0333 7.66665 9.66665V7.66665H9.66665C10.0333 7.66665 10.3333 7.36665 10.3333 6.99998C10.3333 6.63331 10.0333 6.33331 9.66665 6.33331H7.66665V4.33331C7.66665 3.96665 7.36665 3.66665 6.99998 3.66665ZM6.99998 0.333313C3.31998 0.333313 0.333313 3.31998 0.333313 6.99998C0.333313 10.68 3.31998 13.6666 6.99998 13.6666C10.68 13.6666 13.6666 10.68 13.6666 6.99998C13.6666 3.31998 10.68 0.333313 6.99998 0.333313ZM6.99998 12.3333C4.05998 12.3333 1.66665 9.93998 1.66665 6.99998C1.66665 4.05998 4.05998 1.66665 6.99998 1.66665C9.93998 1.66665 12.3333 4.05998 12.3333 6.99998C12.3333 9.93998 9.93998 12.3333 6.99998 12.3333Z" />
+                        </svg>
+                        Добавить контакт
+                    </button>
+                </div>
+                <div class="new-client__btns">
+                    <button type="submit" class="new-client__save btn-reset btn-effect">
+                        Сохранить
+                    </button>
+                    <button class="new-client__cancel btn-reset btn-cancel">
+                        Отмена
+                    </button>
+                </div>
+            </form>
+            <button class="new-client__close btn-reset btn-close">
+                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M16.2332 1.73333L15.2665 0.766664L8.49985 7.53336L1.73318 0.766696L0.766515 1.73336L7.53318 8.50003L0.766542 15.2667L1.73321 16.2333L8.49985 9.46669L15.2665 16.2334L16.2332 15.2667L9.46651 8.50003L16.2332 1.73333Z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="delete-client">
+        <div class="delete-client__content">
+            <h3 class="delete-client__title">
+                Удалить клиента
+            </h3>
+            <p class="delete-client__descr">
+                Вы&nbsp;действительно хотите удалить данного клиента?
+            </p>
+            <button class="delete-client__delete btn-reset btn-effect">
+                Удалить
+            </button>
+            <button class="delete-client__cancel btn-reset btn-cancel">
+                Отмена
+            </button>
+            <button class="delete-client__close btn-reset btn-close">
+                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M16.2332 1.73333L15.2665 0.766664L8.49985 7.53336L1.73318 0.766696L0.766515 1.73336L7.53318 8.50003L0.766542 15.2667L1.73321 16.2333L8.49985 9.46669L15.2665 16.2334L16.2332 15.2667L9.46651 8.50003L16.2332 1.73333Z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="change-client">
+        <div class="change-client__content">
+            <h3 class="change-client__title">
+                Изменить данные <span class="clients__td-id">ID: </span>
+            </h3>
+            <form class="change-client__form" id="change-client__form">
+                <div class="text-field">
+                    <input class="change-client__input" id="input-surname-change" type="text" data-required="true"
+                        data-min-length="2" data-max-length="25" required>
+                    <label class="text-field__placeholder">Фамилия<span class="custom-star">*</span></label>
+                </div>
+                <div class="text-field">
+                    <input class="change-client__input" id="input-name-change" type="text" data-required="true"
+                        data-min-length="2" data-max-length="25" required>
+                    <label class="text-field__placeholder">Имя<span class="custom-star">*</span></label>
+                </div>
+                <div class="text-field">
+                    <input class="change-client__input" id="input-lastname-change" type="text" data-required="true"
+                        data-min-length="2" data-max-length="25" required>
+                    <label class="text-field__placeholder">Отчество<span class="custom-star">*</span></label>
+                </div>
+                <div class="change-client__contacts-container"></div>
+                <div class="change-client__contacts">
+                    <button class="change-client__AddBtn btn-reset">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.99998 3.66665C6.63331 3.66665 6.33331 3.96665 6.33331 4.33331V6.33331H4.33331C3.96665 6.33331 3.66665 6.63331 3.66665 6.99998C3.66665 7.36665 3.96665 7.66665 4.33331 7.66665H6.33331V9.66665C6.33331 10.0333 6.63331 10.3333 6.99998 10.3333C7.36665 10.3333 7.66665 10.0333 7.66665 9.66665V7.66665H9.66665C10.0333 7.66665 10.3333 7.36665 10.3333 6.99998C10.3333 6.63331 10.0333 6.33331 9.66665 6.33331H7.66665V4.33331C7.66665 3.96665 7.36665 3.66665 6.99998 3.66665ZM6.99998 0.333313C3.31998 0.333313 0.333313 3.31998 0.333313 6.99998C0.333313 10.68 3.31998 13.6666 6.99998 13.6666C10.68 13.6666 13.6666 10.68 13.6666 6.99998C13.6666 3.31998 10.68 0.333313 6.99998 0.333313ZM6.99998 12.3333C4.05998 12.3333 1.66665 9.93998 1.66665 6.99998C1.66665 4.05998 4.05998 1.66665 6.99998 1.66665C9.93998 1.66665 12.3333 4.05998 12.3333 6.99998C12.3333 9.93998 9.93998 12.3333 6.99998 12.3333Z"
+                                fill="#9873FF" />
+                        </svg>
+                        Добавить контакт
+                    </button>
+                </div>
+                <div class="change-client__btns">
+                    <button type="submit" class="change-client__save btn-reset btn-effect">
+                        Сохранить
+                    </button>
+                    <button class="change-client__cancel btn-reset btn-cancel">
+                        Удалить клиента
+                    </button>
+                </div>
+            </form>
+            <button class="change-client__close btn-reset btn-close">
+                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M16.2332 1.73333L15.2665 0.766664L8.49985 7.53336L1.73318 0.766696L0.766515 1.73336L7.53318 8.50003L0.766542 15.2667L1.73321 16.2333L8.49985 9.46669L15.2665 16.2334L16.2332 15.2667L9.46651 8.50003L16.2332 1.73333Z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="js/choices.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
